@@ -1,13 +1,39 @@
 .sidemenu{
-
-
+    width:15%;
+    flex:0;
+    display:flex;
+    flex-direction: column;    
+    padding-left:32px;
+    padding-right:32px;
+    box-shadow: 1px 1px 1px 1px gray;
 }
 .sidemenu--header{
-
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    margin-top:24px;
+    padding-bottom:24px
 }
-.sidemenu--options_container{
 
+.sidemenu--options_container{
+    flex:1;
+    display:flex;
+    flex-direction: column;
 }
 .sidemenu--options_title{
+    display:flex;
+}
+.sidemenu--options_footer{
+    display:flex;
+    flex:4;
+}
+.sidemenu--info{
+    height:48px;
+    width:120px;
+    background-color: gray;
+    margin-right:24px;
+    margin-bottom:24px;
+    border-radius:6px;
+    margin-top:96px;
 
 }

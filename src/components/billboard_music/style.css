@@ -1,0 +1,15 @@
+.billboard-music--container{
+    margin-right:32px;
+    cursor: pointer;
+}
+.billboard-music--container img{
+    height:240px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px gray;
+}
+#music-title{
+    color:var(--primary-font-color)
+}
+#music-author{
+    color:var(--secondary-font-color)
+}

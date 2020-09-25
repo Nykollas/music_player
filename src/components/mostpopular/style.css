@@ -1,0 +1,11 @@
+.most-popular--container{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+#most-popular--title{
+    color:var(--primary-font-color)
+}
+#most-popular--songs{
+    color:var(--secondary-font-color)
+}

@@ -1,0 +1,12 @@
+.billboard-list--container{
+    display: flex;
+    flex-direction: column; 
+}
+.billboard-list--row{
+    display: flex;
+    flex-direction: row;
+}
+#billboard-list--title{
+    color:var(--primary-font-color);
+    font-size:20px;
+}
