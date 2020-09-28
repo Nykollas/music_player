@@ -7,7 +7,7 @@
  padding-bottom:32px;
  justify-content:flex-start;
  flex:1;
- max-height:80vh
+ max-height:80vh;
 }
 .music-player--music-card{
     background-color: white;
