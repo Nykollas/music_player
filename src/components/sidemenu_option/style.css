@@ -3,6 +3,7 @@
     flex-direction: row;
     flex:1;
     align-items: center;
+    cursor:pointer
     
 }
 
@@ -12,9 +13,21 @@
 .sidemenu-option--label{
     flex:2;
     align-items:flex-start;
-
+    color:var(--primary-font-color);
+    text-shadow: 1px 1px 12px  rgba(220,220,220, 0.6);
 }
 .sidemenu-option--label p{
     font-size:16px;
     font-weight: bold;
 }
+
+.sidemenu-option--container:hover p{
+    color:var(--blue)
+}
+.sidemenu-option--container:hover path{
+    fill:var(--blue)
+}
+.sidemenu-option--container:active{
+    transform: scale(1.02);
+}
+

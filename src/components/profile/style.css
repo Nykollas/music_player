@@ -9,21 +9,27 @@
     flex-direction: row;
     align-items: center;
     border-radius: 100px;
-    height:inherit
+    height:inherit;
+    margin-bottom:24px;
 }
 .profile--picture-container img{
     display: flex;
     height:84px;
+    width:84px;
     border-radius: 12px;
+    border-radius: 100px;
+  object-fit: cover;
 }
 
+
 #name {
-    font-size:20px;
-    color:black;
+    font-size:16px;
+    color:var(--primary-font-color);
     margin:0px;
+    margin-bottom: 12px;
 }
 #email {
-    font-size:20px;
-    color:gray;
+    font-size:14px;
+    color:var(--secondary-font-color);
     margin:0px;
 }

@@ -1,0 +1,11 @@
+.pop-up--container{
+    height:90vh;
+    width:350px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px 1px gray;
+    position: fixed;
+    z-index:2;
+    margin-left:calc(100vw - 750px);
+    margin-top:calc(5vh);
+    
+}

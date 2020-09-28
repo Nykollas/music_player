@@ -1,29 +1,37 @@
-import React from 'react'
-import './style.css';
-import Icon from '../icons';
-
+import React, { useEffect } from "react";
+import "./style.css";
+import Icon from "../icons";
+import SpotifyPlayer from "react-spotify-web-playback";
 
 export default function MusicPlayer(props) {
-    return (
-        <div className='music-player--container'>
-            <p id='music-player-section-title'>Now Playing</p>
-            <p id='music-player-label'>55 Items on the list</p>
-            <div className='music-player--music-card'>
-                <div className='music-player--music-info'>
-                    <div className='music-player--disc'>
-                        <div className='music-player--disc-hole'></div>
-                    </div>
-                    <p id="music-player-title"> Chance The Rapper</p>
-                    <p id='music-player-artist'> Pop King </p>
-                    <div className='music-player--music-status'>
-                        <input type='range'></input>
-                        <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
-                            <p id='start-time'>00:00</p>
-                            <p id='end-time'>3:35</p>
-                        </div>
-                    </div>
+
+  return (
+    <div className="music-player--container">
+      <p id="music-player-section-title">Now Playing</p>
+      <p id="music-player-label">55 Items on the list</p>
+      <div className="music-player--music-card">
+          {props.data.length > 0 ? 
+                <div className="music-player--music-info" style={{
+                    objectFit:'cover',
+                    backgroundRepeat:'no-repeat',
+                    backgroundSize:'cover',
+                    backgroundImage:
+                        "url("+props.data[props.trackSelectedIndex].album.images[0].url+")",
+                    }}>  
                 </div>
-                <div className='music-player--buttons'>
+                :
+                <></>
+        }
+        </div>
+        {props.data.length > 0 && props.token != "" ?
+                <SpotifyPlayer
+                token={props.token}
+                uris={[props.data[props.trackSelectedIndex].uri]}
+              />
+              :
+              <></>
+        }
+        {/* <div className='music-player--buttons'>
                     <div className='music-player--button-icon'>
                         <Icon name='alternate' iconStyle={{height:32, width:32, fill:'#666666'}}></Icon>
                     </div>
@@ -44,8 +52,8 @@ export default function MusicPlayer(props) {
                         <Icon name='repeat' iconStyle={{height:24, width:24,fill:'#666666'}}></Icon>
                     </div>
 
-                </div>
-            </div>
-        </div>
-    )
+                </div> */}
+      </div>
+    
+  );
 }

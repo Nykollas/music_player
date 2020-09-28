@@ -5,6 +5,7 @@
 .billboard-music--container img{
     height:240px;
     border-radius: 12px;
+    -webkit-user-drag: none;
     box-shadow: 6px 6px 6px gray;
 }
 #music-title{

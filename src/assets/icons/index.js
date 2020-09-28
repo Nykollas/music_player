@@ -10,7 +10,7 @@ import Heart from './heart';
 import Home from './home';
 import Layout from './layout';
 import LeftArrow from './left_arrow';
-import LocalFiles from './localfiles';
+import Localfiles from './localfiles';
 import Pause from './pause';
 import Repeat from './repeat';
 import RightArrow from './right_arrow';
@@ -31,7 +31,7 @@ export {
     Home,
     Layout,
     LeftArrow,
-    LocalFiles,
+    Localfiles,
     Pause,
     Repeat,
     RightArrow,

@@ -3,7 +3,7 @@ import React from 'react'
 export default function heart(props) {
     const { style } = props;
     return (
-<svg width={style.width} height={style.height} viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width={style.width} height={style.height} viewBox="0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
 <path d="M426.972 20.3686C406.728 7.43699 383.509 0 358.737 0C315.03 0 275.888 23.0945 250.043 59.3082C224.075 23.0945 184.97 0 141.203 0C116.491 0 93.3142 7.43699 73.025 20.3686C29.4939 48.3223 0 102.067 0 163.831C0 181.513 2.48149 198.471 6.97599 214.336C31.2145 340.669 250.043 500 250.043 500C250.043 500 468.726 340.673 492.998 214.336C497.493 198.471 500 181.49 500 163.831C500 102.09 470.506 48.3618 426.972 20.3686Z" fill={style.fill}/>
 </svg>
 

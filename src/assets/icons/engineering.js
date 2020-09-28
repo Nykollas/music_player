@@ -7,7 +7,7 @@ export default function engineering(props) {
       width={style.width}
       height={style.height}
       viewBox="0 0 512 512"
-      fill="none"
+      
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clip-path="url(#clip0)">

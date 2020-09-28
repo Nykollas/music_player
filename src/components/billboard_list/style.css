@@ -5,8 +5,15 @@
 .billboard-list--row{
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    
 }
 #billboard-list--title{
     color:var(--primary-font-color);
     font-size:20px;
+}
+.billboard-list--row::-webkit-scrollbar {
+    display: none;
 }

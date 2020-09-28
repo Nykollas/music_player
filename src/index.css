@@ -2,13 +2,16 @@
 
 body{
     margin:0px;
+    overflow-y: hidden;
 }
 p{
     font-family: 'Roboto';
 }
 
 :root{
-    --secondary-font-color:gray;
-    --primary-font-color:black;
+    --secondary-font-color:#B9C0D6;
+    --primary-font-color:#000D3B;
     --thumbs-color:rgba(1,120,255,1);
+    --blue:#3659DD;
+    --red:#FF0924
 }
