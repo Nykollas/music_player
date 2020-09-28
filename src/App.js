@@ -28,13 +28,13 @@ function App() {
   };
 
   const getAccessToken = (event) => {
-    if (event.origin == "http://localhost:3000") {
+    if (event.origin == "https://music-player.nykollas.vercel.app") {
       const data = event.data;
       const url = "https://accounts.spotify.com/api/token";
 
       const grant_type = "grant_type=authorization_code&";
       const code = "code=" + data.code + "&";
-      const redirecturi = "redirect_uri=http://localhost:3000/callback&";
+      const redirecturi = "redirect_uri=https://music-player.nykollas.vercel.app/callback&";
       const scope = 'scope=streaming,user-read-currently-playing,user-read-playback-state,app-remote-control&';
       const client_id = "client_id=" + config.client_id + "&";
       const client_secret = "client_secret=" + config.client_secret + "&";
@@ -72,7 +72,7 @@ function App() {
     const url = "https://accounts.spotify.com/authorize?";
     const clientid = "client_id=" + config.client_id + "&";
     const responsetype = "response_type=code&";
-    const redirecturi = "redirect_uri=http://localhost:3000/callback&";
+    const redirecturi = "redirect_uri=https://music-player.nykollas.vercel.app/callback&";
     const scope = 'scope=user-read-email%20user-read-private%20streaming%20user-read-currently-playing%20user-read-playback-state%20app-remote-control&';
     const state = "state=34fFs29kd09";
 
